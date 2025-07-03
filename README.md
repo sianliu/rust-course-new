@@ -6,11 +6,34 @@ This repository contains my assignments and capstone project for the Rust progra
 
 ## Repository Structure
 
-- assignments/assignment1/ - User struct and interest calculation
-- assignments/assignment2/ - [To be completed]
-- assignments/assignment3/ - [To be completed]
-- assignments/shared/ - Common utilities and shared code
-- capstone/ - Final capstone project
+rust-course/
+├── 📁 assignments/
+│ ├── 📁 assignment1/
+│ │ ├── 📄 Cargo.toml
+│ │ └── 📁 src/
+│ │ └── 📄 main.rs # User struct & interest calculation
+│ ├── 📁 assignment2/
+│ │ ├── 📄 Cargo.toml
+│ │ └── 📁 src/
+│ │ └── 📄 main.rs # [To be completed]
+│ ├── 📁 assignment3/
+│ │ ├── 📄 Cargo.toml
+│ │ └── 📁 src/
+│ │ └── 📄 main.rs # [To be completed]
+│ └── 📁 shared/
+│ ├── 📄 Cargo.toml
+│ └── 📁 src/
+│ └── 📄 lib.rs # Common utilities & shared code
+├── 📁 capstone/
+│ ├── 📄 Cargo.toml
+│ ├── 📁 src/
+│ │ ├── 📄 main.rs # Capstone main application
+│ │ └── 📄 lib.rs # Capstone modules
+│ ├── 📁 tests/ # Unit tests
+│ └── 📁 docs/ # Project documentation
+├── 📄 Cargo.toml # Workspace configuration
+├── 📄 README.md # This file
+└── 📄 .gitignore # Git ignore rules
 
 ## Quick Start
 
