@@ -46,6 +46,6 @@ Build everything:
 ## Course Progress
 
 - [x] Assignment 1: User struct with interest calculation
-- [ ] Assignment 2: [Description pending]
+- [x] Assignment 2: Payment system
 - [ ] Assignment 3: [Description pending]
 - [ ] Capstone Project: [Description pending]" > README.md
