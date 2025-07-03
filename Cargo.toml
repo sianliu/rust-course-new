@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "assignments/assignment1",
+    "assignments/assignment2", 
+    "assignments/assignment3",
+    "assignments/shared",
+    "capstone"
+]
+
+[workspace.package]
+edition = "2021"
