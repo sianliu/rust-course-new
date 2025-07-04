@@ -1,51 +1,65 @@
-# Create README using echo (simpler method)
+# Rust Course
 
-echo "# Rust Programming Course
+## Project Structure
 
-This repository contains my assignments and capstone project for the Rust programming course.
-
-## Repository Structure
-
+```
 rust-course/
-├── 📁 assignments/
-│ ├── 📁 assignment1/
-│ │ ├── 📄 Cargo.toml
-│ │ └── 📁 src/
-│ │ └── 📄 main.rs # User struct & interest calculation
-│ ├── 📁 assignment2/
-│ │ ├── 📄 Cargo.toml
-│ │ └── 📁 src/
-│ │ └── 📄 main.rs # [To be completed]
-│ ├── 📁 assignment3/
-│ │ ├── 📄 Cargo.toml
-│ │ └── 📁 src/
-│ │ └── 📄 main.rs # [To be completed]
-│ └── 📁 shared/
-│ ├── 📄 Cargo.toml
-│ └── 📁 src/
-│ └── 📄 lib.rs # Common utilities & shared code
-├── 📁 capstone/
-│ ├── 📄 Cargo.toml
-│ ├── 📁 src/
-│ │ ├── 📄 main.rs # Capstone main application
-│ │ └── 📄 lib.rs # Capstone modules
-│ ├── 📁 tests/ # Unit tests
-│ └── 📁 docs/ # Project documentation
-├── 📄 Cargo.toml # Workspace configuration
-├── 📄 README.md # This file
-└── 📄 .gitignore # Git ignore rules
+├── assignments/
+│   ├── assignment1/
+│   │   ├── Cargo.toml
+│   │   └── src/
+│   │       └── main.rs          # User struct & interest calculation
+│   ├── assignment2/
+│   │   ├── Cargo.toml
+│   │   └── src/
+│   │       └── main.rs          # [To be completed]
+│   ├── assignment3/
+│   │   ├── Cargo.toml
+│   │   └── src/
+│   │       └── main.rs          # [To be completed]
+│   └── shared/
+│       ├── Cargo.toml
+│       └── src/
+│           └── lib.rs           # Common utilities & shared code
+├── capstone/
+│   ├── Cargo.toml
+│   ├── src/
+│   │   ├── main.rs              # Capstone main application
+│   │   └── lib.rs               # Capstone modules
+│   ├── tests/                   # Unit tests
+│   └── docs/                    # Project documentation
+├── Cargo.toml                   # Workspace configuration
+├── README.md                    # This file
+└── .gitignore                   # Git ignore rules
+```
 
-## Quick Start
+## Running the Projects
 
-Run specific assignment:
-\`cargo run -p assignment1\`
+To run individual assignments:
 
-Build everything:
-\`cargo build\`
+```bash
+cd assignments/assignment1
+cargo run
 
-## Course Progress
+cd ../assignment2
+cargo run
 
-- [x] Assignment 1: User struct with interest calculation
-- [x] Assignment 2: Payment system
-- [ ] Assignment 3: [Description pending]
-- [ ] Capstone Project: [Description pending]" > README.md
+cd ../assignment3
+cargo run
+```
+
+To run the capstone project:
+
+```bash
+cd capstone
+cargo run
+```
+
+To run all projects from the workspace root:
+
+```bash
+cargo run -p assignment1
+cargo run -p assignment2
+cargo run -p assignment3
+cargo run -p capstone
+```
