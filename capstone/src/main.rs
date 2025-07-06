@@ -28,4 +28,7 @@ fn main() {
             Err(e) => skipped_lines.push(idx, e, line_str),
         }
     }
+    for tx in transactions {
+        println!()
+    }
 }
