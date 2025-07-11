@@ -62,11 +62,15 @@ cd capstone
 cargo run
 ```
 
+note: use this method
+
 **Alternative Method (From workspace root):**
 
 ```bash
 cargo run -p capstone
 ```
+
+note: this doesn't work.
 
 ### Running All Projects
 
