@@ -1,4 +1,5 @@
 [workspace]
+resolver = "2"
 members = [
     "assignments/assignment1",
     "assignments/assignment2", 
