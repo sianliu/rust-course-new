@@ -1,5 +1,9 @@
 # Rust Course
 
+Instructor: Kshitij Srivastava
+Rating: 5 stars - patient. knowledgeable. explains well.
+https://www.linkedin.com/in/kshitijweb3/
+
 ## Project Structure
 
 ```
