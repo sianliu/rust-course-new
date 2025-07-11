@@ -24,16 +24,21 @@ rust-course/
 ├── capstone/
 │   ├── Cargo.toml
 │   ├── src/
-│   │   ├── main.rs              # Capstone main application
-│   │   └── lib.rs               # Capstone modules
+│   │   ├── main.rs              # Transaction data analysis application
+│   │   ├── lib.rs               # Library documentation
+│   │   ├── location.rs          # Country and continent enums
+│   │   └── transaction.rs       # Transaction processing logic
 │   ├── tests/                   # Unit tests
-│   └── docs/                    # Project documentation
+│   ├── docs/                    # Project documentation
+│   └── transaction.csv          # Sample transaction data
 ├── Cargo.toml                   # Workspace configuration
 ├── README.md                    # This file
 └── .gitignore                   # Git ignore rules
 ```
 
 ## Running the Projects
+
+### Individual Assignments
 
 To run individual assignments:
 
@@ -48,12 +53,22 @@ cd ../assignment3
 cargo run
 ```
 
-To run the capstone project:
+### Capstone Project
+
+**Primary Method (Navigate to capstone folder):**
 
 ```bash
 cd capstone
 cargo run
 ```
+
+**Alternative Method (From workspace root):**
+
+```bash
+cargo run -p capstone
+```
+
+### Running All Projects
 
 To run all projects from the workspace root:
 
@@ -63,3 +78,54 @@ cargo run -p assignment2
 cargo run -p assignment3
 cargo run -p capstone
 ```
+
+## Documentation
+
+### Generate and View Documentation
+
+**For Capstone Project:**
+
+```bash
+# Navigate to capstone folder
+cd capstone
+
+# Generate and open documentation in browser
+cargo doc --open
+
+# Generate documentation without opening
+cargo doc
+
+# Generate with dependencies
+cargo doc --document-private-items
+```
+
+**Alternative Syntax:**
+
+```bash
+# From workspace root
+cargo doc -p capstone --open
+
+# Generate documentation for all workspace members
+cargo doc --workspace --open
+```
+
+**Manual Documentation Access:**
+After running `cargo doc`, documentation is available at:
+
+```
+target/doc/capstone/index.html
+```
+
+## Capstone Features
+
+The capstone project demonstrates:
+
+- ✅ **Data Processing**: CSV parsing with error handling
+- ✅ **Missing Value Detection**: Excludes incomplete records
+- ✅ **Data Transformation**: Asset name capitalization
+- ✅ **Geographic Analysis**: Country-to-continent mapping
+- ✅ **Time Calculations**: Days under management
+- ✅ **Statistical Analysis**: Investment totals by continent
+- ✅ **Error Handling**: Comprehensive `Result<T>` usage
+- ✅ **Data Structures**: HashMap, Vec, Enums, Structs
+- ✅ **Documentation**: Full rustdoc with examples
